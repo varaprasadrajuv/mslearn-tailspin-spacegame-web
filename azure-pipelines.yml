@@ -3,10 +3,10 @@ trigger:
 
 pool:
   name: Default
-- task: UseDotNet@2
+- task: DotNetCoreCLI@2
   inputs:
-    packageType: 'sdk'
-    version: 
+    command: 'build'
+
 variables:
   buildConfiguration: 'Release'
 
