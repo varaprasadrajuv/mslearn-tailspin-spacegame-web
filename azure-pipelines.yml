@@ -2,8 +2,11 @@ trigger:
 - main
 
 pool:
-  vmImage:ubuntu-latest
-
+  name: Default
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: 
 variables:
   buildConfiguration: 'Release'
 
